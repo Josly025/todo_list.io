@@ -1,8 +1,16 @@
-/*
-=====
-RESET STYLES
-=====
-*/
+* {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans,
+    Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+}
+
+.header {
+  color: black;
+  width: 320px;
+  padding: 10px;
+  border: 2px solid #673ab7;
+  margin-left: 400px;
+  text-align: center;
+}
 
 ul li {
   cursor: pointer;
@@ -20,7 +28,8 @@ ul li {
 }
 
 ul li:nth-child(odd) {
-  background: #5a4bad;
+  background: #673ab7;
+  color: white;
 }
 
 ul li.checked {
