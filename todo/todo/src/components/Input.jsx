@@ -13,8 +13,22 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Input = () => {
+const Input = ({ setInputText, inputText, setTasks, tasks }) => {
   const classes = useStyles();
+  const inputTextHandler = (e) => {
+    // console.log(e.target.value);
+    setInputText(e.target.value);
+  };
+
+  const submitTodoHandler = (e) => {
+    e.preventDefault();
+    setTasks([
+      ...tasks,
+      { text: inputText, completed: false, id: Math.random() * 1000 },
+    ]);
+    //set State back to 0
+    setInputText("");
+  };
 
   return (
     <div className={classes.root}>
@@ -27,7 +41,12 @@ const Input = () => {
         <Grid>
           <form className={classes.root} noValidate autoComplete="off">
             <TextField id="outlined-basic" label="Tasks" variant="outlined" />
-            <Button variant="contained" color="secondary">
+            <Button
+              variant="contained"
+              color="secondary"
+              type="submit"
+              onClick={submitTodoHandler}
+            >
               Add Task
             </Button>
           </form>

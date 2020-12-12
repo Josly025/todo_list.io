@@ -31,7 +31,7 @@ const TodoList = () => {
         alignItems="center"
       >
         <Grid item xs={12} md={6}>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h6" align="center" className={classes.title}>
             | TASK LIST | :
           </Typography>
           <div className={classes.demo}>
