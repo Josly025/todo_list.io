@@ -45,6 +45,7 @@ const Input = ({ setInputText, inputText, setTasks, tasks }) => {
               id="outlined-basic"
               label="Tasks"
               variant="outlined"
+              type="text"
               value={inputText}
               onChange={inputTextHandler}
             />

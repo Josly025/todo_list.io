@@ -7,24 +7,24 @@ import IconButton from "@material-ui/core/IconButton";
 import Divider from "@material-ui/core/Divider";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 
-const TaskList = ({ task, setTask }) => {
+const TaskList = ({ text, task, tasks, setTasks }) => {
   const [secondary, setSecondary] = React.useState(false);
 
   //events
   const deleteHandler = (e) => {
-    setTodos(todos.filter((el) => el.id !== todo.id));
+    setTasks(tasks.filter((el) => el.id !== task.id));
   };
 
   const completeHandler = (e) => {
-    setTodos(
-      todos.map((item) => {
-        if (item.id === todo.id) {
+    setTasks(
+      tasks.map((task) => {
+        if (task.id === task.id) {
           return {
-            ...item,
-            completed: !item.completed,
+            ...task,
+            completed: !task.completed,
           };
         }
-        return item;
+        return task;
       })
     );
   };
