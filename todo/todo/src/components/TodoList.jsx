@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const TodoList = () => {
+const TodoList = (setTasks, tasks) => {
   const classes = useStyles();
   const [dense, setDense] = React.useState(false);
 
@@ -37,7 +37,16 @@ const TodoList = () => {
           <div className={classes.demo}>
             <List dense={dense}>
               {/* List Component */}
-              <TaskList />
+              {tasks.map((task) => (
+                <TaskList
+                  setTasks={setTasks}
+                  tasks={tasks}
+                  task={task}
+                  key={task.id}
+                  text={task.text}
+                  id={task.id}
+                />
+              ))}
             </List>
           </div>
         </Grid>

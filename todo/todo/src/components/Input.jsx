@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Input = ({ setInputText, inputText, setTasks, tasks }) => {
   const classes = useStyles();
+
   const inputTextHandler = (e) => {
     // console.log(e.target.value);
     setInputText(e.target.value);
@@ -40,7 +41,13 @@ const Input = ({ setInputText, inputText, setTasks, tasks }) => {
       >
         <Grid>
           <form className={classes.root} noValidate autoComplete="off">
-            <TextField id="outlined-basic" label="Tasks" variant="outlined" />
+            <TextField
+              id="outlined-basic"
+              label="Tasks"
+              variant="outlined"
+              value={inputText}
+              onChange={inputTextHandler}
+            />
             <Button
               variant="contained"
               color="secondary"
