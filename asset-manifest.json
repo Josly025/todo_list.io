@@ -1,20 +1,17 @@
 {
   "files": {
-    "main.css": "/Josly025/todo_list.io.git/static/css/main.469f2009.chunk.css",
-    "main.js": "/Josly025/todo_list.io.git/static/js/main.6f361d86.chunk.js",
-    "main.js.map": "/Josly025/todo_list.io.git/static/js/main.6f361d86.chunk.js.map",
+    "main.js": "/Josly025/todo_list.io.git/static/js/main.81cf903e.chunk.js",
+    "main.js.map": "/Josly025/todo_list.io.git/static/js/main.81cf903e.chunk.js.map",
     "runtime-main.js": "/Josly025/todo_list.io.git/static/js/runtime-main.58218967.js",
     "runtime-main.js.map": "/Josly025/todo_list.io.git/static/js/runtime-main.58218967.js.map",
-    "static/js/2.e1bf6335.chunk.js": "/Josly025/todo_list.io.git/static/js/2.e1bf6335.chunk.js",
-    "static/js/2.e1bf6335.chunk.js.map": "/Josly025/todo_list.io.git/static/js/2.e1bf6335.chunk.js.map",
+    "static/js/2.0161d411.chunk.js": "/Josly025/todo_list.io.git/static/js/2.0161d411.chunk.js",
+    "static/js/2.0161d411.chunk.js.map": "/Josly025/todo_list.io.git/static/js/2.0161d411.chunk.js.map",
     "index.html": "/Josly025/todo_list.io.git/index.html",
-    "static/css/main.469f2009.chunk.css.map": "/Josly025/todo_list.io.git/static/css/main.469f2009.chunk.css.map",
-    "static/js/2.e1bf6335.chunk.js.LICENSE.txt": "/Josly025/todo_list.io.git/static/js/2.e1bf6335.chunk.js.LICENSE.txt"
+    "static/js/2.0161d411.chunk.js.LICENSE.txt": "/Josly025/todo_list.io.git/static/js/2.0161d411.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.58218967.js",
-    "static/js/2.e1bf6335.chunk.js",
-    "static/css/main.469f2009.chunk.css",
-    "static/js/main.6f361d86.chunk.js"
+    "static/js/2.0161d411.chunk.js",
+    "static/js/main.81cf903e.chunk.js"
   ]
 }

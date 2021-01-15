@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/components/TaskList.css"],"names":[],"mappings":"AAAA,WACE,4BAA6B,CAC7B,SACF","file":"main.469f2009.chunk.css","sourcesContent":[".completed {\n  text-decoration: line-through;\n  color: red;\n}\n"]}
