@@ -6,7 +6,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import IconButton from "@material-ui/core/IconButton";
 import Divider from "@material-ui/core/Divider";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
-
+import "./TaskList.css";
 const TaskList = ({ text, task, tasks, setTasks }) => {
   const [secondary, setSecondary] = React.useState(false);
 
@@ -17,14 +17,14 @@ const TaskList = ({ text, task, tasks, setTasks }) => {
 
   const completeHandler = (e) => {
     setTasks(
-      tasks.map((task) => {
-        if (task.id === task.id) {
+      tasks.map((listItem) => {
+        if (listItem.id === task.id) {
           return {
-            ...task,
-            completed: !task.completed,
+            ...listItem,
+            completed: !listItem.completed,
           };
         }
-        return task;
+        return listItem;
       })
     );
   };

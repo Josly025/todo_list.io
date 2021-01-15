@@ -79,7 +79,7 @@ const Header = () => {
           <LinkTab label="" href="/drafts" {...a11yProps(0)} />
           <LinkTab
             style={{ fontSize: 20 }}
-            label="What do we need to accomplish Today? "
+            label="What do you need to accomplish Today? "
             href="/trash"
             {...a11yProps(1)}
           />
